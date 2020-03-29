@@ -1,0 +1,23 @@
+baseURL: http://example.org/
+languageCode: en-uk
+title : Mistil
+theme: ankh
+
+params:
+    header:
+        #possible values: see icons directory
+        socialmedia: 
+            - link: https://facebook.com/#
+              icon: instagram
+            - link: https://facebook.com/#
+              icon: twitter
+            - link: https://facebook.com/#
+              icon: facebook
+            - link: https://facebook.com/#
+              icon: whatsapp
+            - link: https://facebook.com/#
+              icon: linkedin
+            - link: https://facebook.com/#
+              icon: youtube
+            - link: https://facebook.com/#
+              icon: snapchat

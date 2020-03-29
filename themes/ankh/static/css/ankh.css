@@ -1,0 +1,122 @@
+:root {
+    --text-color: #1B1C22;
+    --background-color-white: rgb(243, 243, 243);
+    --accent-color-primary: rgb(97, 201, 77);
+    --dark-green: rgb(38, 100, 24);
+    --light-grey: lightgrey;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset CSS */
+
+body {
+    margin: 0px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    box-sizing:border-box;
+}
+/* General */
+p {
+    color: var(--text-color);
+}
+
+.icon {
+    color: var(--text-color);
+}
+.icon:hover {
+    color:var(--accent-color-primary);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--dark-green);
+}
+a:hover {
+    color: var(--accent-color-primary);
+}
+a:focus {
+    border: 1px dotted black;
+}
+
+/* Header */
+
+nav.header-nav {
+    color: var(--background-color-white);
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: Dosis, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+.header-left, .header-center, .header-right {
+    display: block;
+    width: 33.33vw;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header-left, .header-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 30px;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.social-anchor span {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+nav .header-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    max-height: 95px;
+}
+
+/* Gallery selector */
+
+.switch-gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gallery */
+
+section.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.portfolio figure {
+    height: 375px;
+    width: 375px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px var(--light-grey);
+}
+
+section.portfolio figure img {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+<header>
+    <nav class="header-nav">
+        {{- $header      := .Site.Params.header }}
+        {{- $socialMedia := index $header "socialmedia" }}
+        <div class="header-left">
+            {{- range $socialMedia }}
+                <a class="social-anchor" href="{{ .link }}" title="{{ .icon }}">
+                    <span class="icon fab fa-{{ .icon}}"></span>
+                </a>
+                {{- end }}
+        </div>
+        <div class="header-center">
+            <a href="{{ .Site.BaseURL }}" title="Home">
+                <img class="header-logo" src="/images/logos/headerlogo.png/" alt="header logo" />
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="" class="nav-link" title="About">About</a>
+        </div>
+    </nav>
+</header>
