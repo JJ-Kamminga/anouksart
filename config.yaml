@@ -2,7 +2,7 @@ baseURL: http://example.org/
 languageCode: en-uk
 title : Mistil
 theme: ankh
-
+canonifyurls: true
 params:
     header:
         #possible values: see icons directory

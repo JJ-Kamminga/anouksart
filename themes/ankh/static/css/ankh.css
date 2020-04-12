@@ -4,6 +4,7 @@
     --accent-color-primary: rgb(97, 201, 77);
     --dark-green: rgb(38, 100, 24);
     --light-grey: lightgrey;
+    --dark-grey: rgb(78, 78, 78);
   }
 
 html {
@@ -49,7 +50,6 @@ a:focus {
 
 nav.header-nav {
     color: var(--background-color-white);
-    border-bottom: 1px solid lightgray;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -93,11 +93,108 @@ nav .header-logo {
 
 /* Gallery selector */
 
-.switch-gallery {
+section.gallery-selector {
+    font-family: Dosis, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+section.gallery-selector .gallery-selector-item-left {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+section.gallery-selector .gallery-selector-item-mid {
+    display: flex;
+    width: 20%;
+}
+section.gallery-selector .gallery-selector-item-right {
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+}
+
+.switch-area {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+}
+
+.switch-area .left-label {
+    position: absolute;
+}
+
+.switch-area .right-label {
+    position: absolute;
+}
+
+.switch-box {
     display: block;
+    width: 60px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-grey);
+    border: 2px solid var(--dark-grey);
+    border-radius: 50px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 0px;
+    bottom: 1px;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 3px solid white;
+  }
+  
+  input:checked + .slider {
+    background-color: white;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    border: 3px solid var(--dark-grey);
+  }
 
 /* Gallery */
 
@@ -106,7 +203,7 @@ section.portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 section.portfolio figure {
