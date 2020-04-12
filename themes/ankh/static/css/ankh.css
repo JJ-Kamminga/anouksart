@@ -32,17 +32,17 @@ p {
     color:var(--accent-color-primary);
 }
 
-a {
+a:not(.home) {
     color: var(--text-color);
     text-decoration: none;
 }
-a:visited {
+a:visited:not(.home) {
     color: var(--dark-green);
 }
-a:hover {
+a:hover:not(.home) {
     color: var(--accent-color-primary);
 }
-a:focus {
+a:focus:not(.home) {
     border: 1px dotted black;
 }
 
@@ -216,4 +216,27 @@ section.portfolio figure {
 section.portfolio figure img {
     height: 100%;
     width: 100%;
+}
+
+/* About page */
+
+section.static-page {
+    width: 100%;
+}
+
+.static-page-header {
+    font-family: Dosis, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.static-page-contents {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 250px;
+    max-width: 75vw;
 }

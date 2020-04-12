@@ -3,6 +3,10 @@ languageCode: en-uk
 title : Mistil
 theme: ankh
 canonifyurls: true
+
+permalinks:
+  statics: /:title
+
 params:
     header:
         #possible values: see icons directory

@@ -3,53 +3,9 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        {{- block "main" . }}
-
-            <!-- Gallery selector -->
-            <section class="gallery-selector">
-                <div class="gallery-selector-item-left">
-                    <span class="left-label">D&D</span>
-                </div>
-                <div class="gallery-selector-item-mid switch-area">
-                    <div class="switch-box">
-                        <label class="switch gallery-switch">
-                            <input type="checkbox" id="portfolio-checkbox" onclick="switchPortfolios()">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="gallery-selector-item-right">
-                    <span class="right-label">Tattoo</span>
-                </div>
-            </section>
-            <!-- gallery - TODO: move to partial -->
-            {{ $tattoourl := "/images/tattoo" }}
-            {{ $dndurl := "/images/dnd" }}
-            {{ $dnd := readDir "/static/images/dnd" }}
-            {{ $tattoo := readDir "/static/images/tattoo" }}
-
-            <section id="portfolio-1" class="portfolio tattoo-portfolio">
-                {{ range $tattoo }}
-                <figure>
-                <a href="{{$tattoourl}}/{{.Name | urlize }}">
-                    <img src="{{$tattoourl}}/{{.Name | urlize }}">
-                </a>
-                </figure>
-                {{ end }}
-            </section>
-            <section id="portfolio-2" class="portfolio dnd-portfolio" style="display: none;">
-                {{ range $dnd }}
-                <figure>
-                <a href="{{$dndurl}}/{{.Name | urlize }}">
-                    <img src="{{$dndurl}}/{{.Name | urlize }}">
-                </a>
-                </figure>
-                {{ end }}
-            </section>
-
-            <!-- End of gallery -->
-
-        {{- end }}
+        
+        {{- partial "galleries.html" . -}}
+        
         {{- partial "footer.html" . -}}
     </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+            {{- block "main" . }}
+            <section class="static-page">
+                <div class="static-page-header">
+                    {{ .Title }}
+                </div>
+                <div class="static-page-contents">
+                    {{ .Content }}
+                </div>
+            </section>
+            {{- end }}
+        {{- partial "footer.html" . -}}
+        <p>End of statics html</p>
+    </body>
+</html>
