@@ -11,17 +11,19 @@ params:
     header:
         #possible values: see icons directory
         socialmedia: 
-            - link: https://facebook.com/#
+            - link: https://www.instagram.com/mistil_art/
               icon: instagram
-            - link: https://facebook.com/#
-              icon: twitter
-            - link: https://facebook.com/#
-              icon: facebook
-            - link: https://facebook.com/#
-              icon: whatsapp
-            - link: https://facebook.com/#
-              icon: linkedin
-            - link: https://facebook.com/#
-              icon: youtube
-            - link: https://facebook.com/#
-              icon: snapchat
+            #- link: https://facebook.com/#
+            #  icon: deviantart
+            #- link: https://facebook.com/#
+            #  icon: discord
+            #- link: https://facebook.com/#
+            #  icon: d-and-d
+            #- link: https://facebook.com/#
+            #  icon: d-and-d-beyond
+            #- link: https://facebook.com/#
+            #  icon: critical-role
+            #- link: https://facebook.com/#
+            #  icon: etsy
+            #- link: https://facebook.com/#
+            #  icon: patreon

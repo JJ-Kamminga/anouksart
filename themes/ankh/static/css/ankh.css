@@ -5,6 +5,8 @@
     --dark-green: rgb(38, 100, 24);
     --light-grey: lightgrey;
     --dark-grey: rgb(78, 78, 78);
+    --white: white;
+    --black: black;
   }
 
 html {
@@ -48,6 +50,15 @@ a:focus:not(.home) {
 
 /* Header */
 
+header {
+    position: sticky;
+    top: 0px;
+    background: var(--white);
+    z-index: 1;
+    box-shadow: 1px 1px 10px var(--light-grey);
+
+}
+
 nav.header-nav {
     color: var(--background-color-white);
     display: flex;
@@ -77,6 +88,10 @@ nav.header-nav {
     justify-content: flex-end;
 }
 
+.header-right a {
+    margin-left: 50px;
+}
+
 .social-anchor span {
     font-size: 25px;
     color: var(--text-color);
@@ -88,6 +103,7 @@ nav .header-logo {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
+    margin-bottom: 7.5px;
     max-height: 95px;
 }
 
@@ -200,6 +216,7 @@ section.gallery-selector .gallery-selector-item-right {
 
 section.portfolio {
     width: 100%;
+    min-height: 75vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -222,6 +239,7 @@ section.portfolio figure img {
 
 section.static-page {
     width: 100%;
+    min-height: 75vh;
 }
 
 .static-page-header {
@@ -229,6 +247,14 @@ section.static-page {
     font-size: 35px;
     margin: 10px 0px 10px 0px;
     text-align: center;
+}
+
+.static-page-instagram {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 300px;
+    max-width: 540px;
+    display: block;
 }
 
 .static-page-contents {
@@ -239,4 +265,16 @@ section.static-page {
     margin-right: auto;
     min-width: 250px;
     max-width: 75vw;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: var(--dark-grey);
+    font-family: Dosis, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    bottom: 0px;
+    text-align: center;
 }
