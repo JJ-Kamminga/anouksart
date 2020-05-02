@@ -13,3 +13,6 @@ function switchPortfolios() {
 }
 
 document.addEventListener('DOMContentLoaded', switchPortfolios);
+
+function toggleHamburger() {
+}
