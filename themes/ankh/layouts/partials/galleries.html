@@ -22,18 +22,14 @@
 <section id="portfolio-1" class="portfolio tattoo-portfolio">
     {{ range $tattoo }}
     <figure>
-    <a href="{{$tattoourl}}/{{.Name | urlize }}">
         <img src="{{$tattoourl}}/{{.Name | urlize }}">
-    </a>
     </figure>
     {{ end }}
 </section>
 <section id="portfolio-2" class="portfolio dnd-portfolio" style="display: none;">
     {{ range $dnd }}
     <figure>
-    <a href="{{$dndurl}}/{{.Name | urlize }}">
         <img src="{{$dndurl}}/{{.Name | urlize }}">
-    </a>
     </figure>
     {{ end }}
 </section>

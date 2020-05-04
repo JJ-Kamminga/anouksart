@@ -1,13 +1,18 @@
-baseURL: http://example.org/
+baseURL: http://mistilart.com/
 languageCode: en-uk
-title : Mistil
+title : Mistil Art
 theme: ankh
+author: Mistil Art
 canonifyurls: true
+enableRobotsTXT: true
 
 permalinks:
   statics: /:title
 
 params:
+    author: Mistil Art
+    favicon: favicon.ico
+    description: Tattoo and D&D character art
     header:
         #possible values: see icons directory
         socialmedia: 

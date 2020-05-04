@@ -1,8 +1,17 @@
 <head>
+    {{ partial "seo_schema" . }}
+    <title>
+        {{ if eq .Title .Site.Title }}
+          {{ .Site.Title }}
+      {{ else }}
+          {{ .Title }} - {{ .Site.Title }}
+      {{ end }}
+    </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Page Title</title>
+    <meta charset="utf-8">
+    <meta name="author" content="{{ .Site.Author }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/{{ .Site.Params.favicon }}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/fonts.css">
