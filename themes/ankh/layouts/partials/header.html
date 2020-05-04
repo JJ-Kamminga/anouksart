@@ -1,8 +1,11 @@
 <header>
-    <nav class="header-nav">
+    <nav class="header-nav" id="header-nav">
         {{- $header      := .Site.Params.header }}
         {{- $socialMedia := index $header "socialmedia" }}
-        <div class="header-left">
+        <div class="header-mobile">
+            <span class="hamburger" onclick="toggleHamburger(this)">☰</span>
+        </div>
+        <div class="header-left" id="header-left">
             {{- range $socialMedia }}
                 <a class="social-anchor" href="{{ .link }}" title="{{ .icon }}">
                     <span class="icon fab fa-{{ .icon}}"></span>
@@ -14,12 +17,9 @@
                 <img class="header-logo" src="/images/logos/headerlogo.png/" alt="header logo" />
             </a>
         </div>
-        <div class="header-right">
+        <div class="header-right" id="header-right">
             <a href="https://www.redbubble.com/people/MistilArt/shop" target="blank" class="nav-link" title="Store">Store</a>
             <a href="{{ .Site.BaseURL }}about" class="nav-link" title="About">About</a>
-        </div>
-        <div class="header-mobile">
-            <span class="hamburger" onclick="toggleHamburger(this)">☰</span>
         </div>
     </nav>
 </header>

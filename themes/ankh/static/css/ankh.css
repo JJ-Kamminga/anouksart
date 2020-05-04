@@ -61,6 +61,7 @@ header {
 
 nav.header-nav {
     display: flex;
+    background: var(--white);
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -69,18 +70,25 @@ nav.header-nav {
 }
 
 @media screen and (max-width: 896px) {
-    div.header-left, div.header-right {
-        display: none;
+    nav.header-nav {
+        height: 80vh;
+        flex-wrap: wrap;
     }
 
     div.header-mobile {
+        display: block;
+        width: 33.33vw;
         color: var(--black);
+    }
+
+    div.header-left, div.header-center, div.header-right {
+        width: 100vw;
     }
 
     div.header-mobile .hamburger {
         display: block;
         font-size: 50px;
-        margin: 17.5px;
+        margin: 17.5px 55px 17.5px 25px;
     }
 }
 
