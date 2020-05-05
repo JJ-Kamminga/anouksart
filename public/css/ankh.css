@@ -84,22 +84,6 @@ border-radius: 5px;
     text-decoration: none;
 }
 
-/* 
-
-a:not(.home) {
-    color: var(--text-color);
-    text-decoration: none;
-}
-a:visited:not(.home) {
-    color: var(--dark-green);
-}
-a:hover:not(.home) {
-    color: var(--accent-color-primary);
-}
-a:focus:not(.home) {
-    border: 1px dotted black;
-} */
-
 /* Header */
 
 header {

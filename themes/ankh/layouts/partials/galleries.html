@@ -20,7 +20,7 @@
 {{ $tattoo := readDir "/static/images/tattoo" }}
 
 <section id="portfolio-1" class="portfolio tattoo-portfolio">
-    {{ range $tattoo }}
+    {{ range sort $tattoo}}
     <figure>
         <img src="{{$tattoourl}}/{{.Name | urlize }}">
     </figure>
