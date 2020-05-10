@@ -1,15 +1,20 @@
 :root {
     --text-color: #1B1C22;
+    --black: black;
     
-    --accent-color-primary: rgb(97, 201, 77);
-    --accent-color-secondary: rgb(80, 145, 67);
-    --dark-green: rgb(38, 100, 24);
+    /* Main colors */
+    --main-colour-1: #5B9549;
+    --main-colour-2: #6DD67A;
+    --main-colour-3: #B89158;
+    --main-colour-4: #D15834;
+    --main-colour-5: #883D28;
+    
+    /* Shades */
+    --white: white;
     --light-grey: lightgrey;
     --medium-grey: rgb(99, 99, 99);
     --dark-grey: rgb(78, 78, 78);
     --darker-grey: rgb(43, 43, 43);
-    --white: white;
-    --black: black;
   }
 
 html {
@@ -32,56 +37,45 @@ p {
 
 /* General link styling */
 p a {
-    color: var(--text-color);
-    border: 2px solid var(--medium-grey);
-    padding: 2px 5px 2px 5px;
-    border-radius: 5px;
-    text-decoration: none;
+    color: var(--main-colour-3);
+    text-decoration: underline;
 }
-
-p a:hover {
-    border: 2px solid var(--accent-color-primary);
-}
-
 p a:visited {
-    color: var(--dark-green);
+    color: var(--main-colour-1);
 }
-
+p a:hover {
+    color: var(--main-colour-2);
+}
 p a:active {
-    border: none;
+    color: var(--main-colour-4);
 }
 
 /* Navigation link styling */
 
 nav.header-nav a { 
     color: var(--text-color);
-    text-decoration: none;
 }
-
 nav.header-nav a:visited {
     color: var(--text-color);
 }
-
 nav.header-nav a:hover {
-    color: var(--accent-color-primary);
+    color: var(--main-colour-2);
+}
+nav.header-nav a:active {
+    color: var(--main-colour-4);
 }
 
 .icon {
     color: var(--text-color);
 }
-.icon:hover {
-    color:var(--accent-color-primary);
+.icon:visited {
+    color:var(--text-color);
 }
-
-/* Footer link styling */
-
-
-footer a {
-color: var(--dark-grey);
-border: 2px solid var(--dark-grey);
-padding: 2px 5px 2px 5px;
-border-radius: 5px;
-    text-decoration: none;
+.icon:hover {
+    color:var(--main-colour-2);
+}
+.icon:active {
+    color:var(--main-colour-4);
 }
 
 /* Header */
