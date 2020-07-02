@@ -22,14 +22,14 @@
 <section id="portfolio-1" class="portfolio tattoo-portfolio">
     {{ range sort $tattoo}}
     <figure>
-        <img src="{{$tattoourl}}/{{.Name | urlize }}">
+        <img src="{{$tattoourl}}/{{.Name | urlize }}" alt="Portfolio image {{.Name}}">
     </figure>
     {{ end }}
 </section>
 <section id="portfolio-2" class="portfolio dnd-portfolio" style="display: none;">
     {{ range $dnd }}
     <figure>
-        <img src="{{$dndurl}}/{{.Name | urlize }}">
+        <img src="{{$dndurl}}/{{.Name | urlize }}" alt="Portfolio image {{.Name}}" >
     </figure>
     {{ end }}
 </section>
