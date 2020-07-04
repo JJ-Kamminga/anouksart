@@ -12,10 +12,13 @@ permalinks:
 params:
     author: Mistil Art
     favicon: favicon.ico
+    
     description: Tattoo and D&D character art
     header:
-        #possible values: see icons directory
-        socialmedia: 
+        logo: /images/logos/headerlogo.png/
+        storeTitle: Store
+        storeLink: https://www.redbubble.com/people/MistilArt/shop
+        socialmedia:
             - link: https://www.instagram.com/mistil_art/
               icon: instagram
             #- link: https://facebook.com/#

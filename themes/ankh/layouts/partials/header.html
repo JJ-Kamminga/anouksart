@@ -10,7 +10,6 @@
                   <span class="line"></span>
                 </div>
             </div>
-            <!-- <span class="hamburger-old" onclick="toggleHamburger(this)">☰</span> -->
         </div>
         <div class="header-left" id="header-left">
             {{- range $socialMedia }}
@@ -21,11 +20,11 @@
         </div>
         <div class="header-center" id="header-center">
             <a href="{{ .Site.BaseURL }}" title="Home" class="home">
-                <img class="header-logo" src="/images/logos/headerlogo.png/" alt="header logo" />
+                <img class="header-logo" src="{{ .Site.Params.header.logo}}" alt="header logo" />
             </a>
         </div>
         <div class="header-right" id="header-right">
-            <a href="https://www.redbubble.com/people/MistilArt/shop" target="blank" class="nav-link" title="Store">Store</a>
+            <a href="{{ .Site.Params.header.storeLink}}" target="blank" class="nav-link" title="{{ .Site.Params.header.storeTitle}}">{{ .Site.Params.header.storeTitle}}</a>
             <a href="{{ .Site.BaseURL }}about" class="nav-link" title="About">About</a>
         </div>
     </nav>
